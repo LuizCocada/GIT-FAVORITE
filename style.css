@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    color: #FFF;
+}
+
+#app{
+    margin: auto;
+    padding: 0 2rem;
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 11.5rem 16rem 8.7rem;
+}
+
+nav svg{
+    fill: white;
+    cursor: pointer;
+    transition: 0.1s;
+    /* padding-right: 2rem; */
+}
+
+nav svg:hover{
+    fill: #065E7C;
+    transform: scale(1.1);
+}
+
+
+
+.input-search{
+    display: flex;
+    gap: .8rem;
+}
+
+.input-search input{
+    padding: 1.6rem;
+    width: 46.2rem;
+    background: #06181C;
+
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.input-search button{
+    padding: 1.2rem 3.2rem;
+    display: flex;
+
+    border-radius: 5px;
+    border: none;
+    background: #065E7C;
+    gap: .8rem;
+
+    color: var(--neutral-colors-white, #FFF);
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2.4rem; 
+    text-transform: uppercase;
+}
+
+.input-search button, .svg-img {
+    transition: 0.2s;
+}
+
+.svg-img{
+    fill: white;
+    
+}
+
+.input-search button:hover .svg-img{  /*para mudar a cor do SVG precisa tirar o fill do arquivo.svg a adicionar aqui*/
+    fill:#065E7C;         
+    transform: scale(1.05);
+       
+}
+
+.input-search button:hover{
+    background-color: #FFF;
+    color: #065E7C;
+    transform: scale(1.05);
+
+}
+
+table *{
+    color: #FFF;
+}
+
+.table-custom{
+    border: 3px solid #065E7C;
+    width: 112.3rem;
+    margin: auto;
+    overflow: none;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.noUser{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    padding: 25rem;
+
+    color: #4E5455;
+    font-size: 4.0rem;
+    font-weight: bold;
+    line-height: 2.4rem;
+}
+
+.hide{
+    display: none;
+}
+
+table{
+    min-width: 112.3rem;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table th{
+    background-color: #092e39;
+    padding: 1.6rem 4rem;
+}
+
+table th:first-child{
+    border-top-left-radius:.4rem;
+}
+
+table th:last-child{
+    border-top-right-radius: .4rem;
+}
+
+table td{
+    padding: 1.5rem;
+    
+}
+
+
+td.user img{
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+td.user{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+td.user a{
+    text-decoration: none;
+}
+
+td.user p{
+    font-weight: bold;
+}
+
+td .remove{
+    border: none;
+    background: none;
+    font-family: 'Roboto', sans-serif;
+
+    color: #F75A68;
+    font-size: 2.0rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+td .remove:hover{
+    color: #ffffff;
+    transform: scale(0.9);
+}
+
+
+td.repositories,td.followers{
+    padding-left: 11rem;
+}
+
+td button{
+    padding-left: 10rem;
+}
+
+table tr:nth-child(even){
+    background: #06181C;
+    border-top: solid 1.8px #065E7C;
+    border-bottom: solid 0.9px #065E7C ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
